@@ -23,8 +23,8 @@ class WebRequestHandler(BaseHTTPRequestHandler):
     <p> Query: {self.query_data()}   </p>
 """
 
-
 if __name__ == "__main__":
     print("Starting server")
-    server = HTTPServer(("localhost", 8080), WebRequestHandler)
+    #Se cambia el puerto local de 8080 a 8000
+    server = HTTPServer(("localhost", 8000), WebRequestHandler)
     server.serve_forever()
